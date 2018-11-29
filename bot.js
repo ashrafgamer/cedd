@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const client2 = new Discord.Client();
 const client3 = new Discord.Client();
 const client4 = new Discord.Client();
+const client5 = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -57,3 +58,11 @@ var channel = "517786006951559168";//ايدي الروم
 
 // THIS  MUST  BE  THIS  WAY
 client4.login(process.env.BOT_TOKEN4);
+
+client5.on('ready', () => {
+     client5.user.setActivity("لا تسئلني",{type: 'WATCHING'})
+ 
+});
+
+// THIS  MUST  BE  THIS  WAY
+client5.login(process.env.BOT_TOKEN5);
